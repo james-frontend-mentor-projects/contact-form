@@ -96,7 +96,7 @@ textarea {
 
   &:focus,
   &:active {
-    outline: none;
+    outline: 1px solid $green;
     border: 1px solid $green;
   }
 }
@@ -137,11 +137,7 @@ legend {
 
   &:focus,
   &:active,
-  &:has(
-      input[type="radio"]:checked,
-      input[type="radio"]:focus,
-      input[type="radio"]:active
-    ) {
+  &:has(input[type="radio"]:checked, input[type="radio"]:focus, input[type="radio"]:active) {
     outline: none;
     border: 1px solid $green;
     background-color: $light-green;
