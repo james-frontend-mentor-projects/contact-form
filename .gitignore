@@ -27,3 +27,6 @@ Thumbs.db
 design/
 style-guide.md
 README-template.md
+
+# Local Netlify folder
+.netlify
