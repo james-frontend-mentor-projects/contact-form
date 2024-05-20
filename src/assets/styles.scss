@@ -90,7 +90,7 @@ textarea {
   border-radius: 8px;
   border: 1px solid $medium-grey;
 
-  &:has(+ .error.show) {
+  &:has(~ .error.show) {
     border: 1px solid $red;
   }
 
@@ -137,7 +137,11 @@ legend {
 
   &:focus,
   &:active,
-  &:has(input[type="radio"]:checked) {
+  &:has(
+      input[type="radio"]:checked,
+      input[type="radio"]:focus,
+      input[type="radio"]:active
+    ) {
     outline: none;
     border: 1px solid $green;
     background-color: $light-green;
