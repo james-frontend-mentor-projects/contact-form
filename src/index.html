@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
 
     <link rel="stylesheet" href="assets/styles.scss" />
 
@@ -23,112 +18,63 @@
         <h1 id="heading">Contact Us</h1>
         <div class="name-wrapper">
           <div class="input-wrapper">
-            <label for="first-name"
-              >First Name
-              <div class="required-symbol">*</div></label
-            >
-            <input
-              type="text"
-              id="first-name"
-              name="first-name"
-              autocomplete="given-name"
-            />
-            <span class="error" id="first-name-required" data-for="first-name"
-              >This field is required</span
-            >
+            <label for="first-name">First Name <span class="required-symbol">*</span></label>
+            <input type="text" id="first-name" name="first-name" autocomplete="given-name" />
+            <span class="error" id="first-name-required" data-for="first-name">This field is required</span>
           </div>
           <div class="input-wrapper">
-            <label for="last-name"
-              >Last Name
-              <div class="required-symbol">*</div></label
-            >
-            <input
-              type="text"
-              id="last-name"
-              name="last-name"
-              autocomplete="family-name"
-            />
-            <span class="error" id="last-name-required" data-for="last-name"
-              >This field is required</span
-            >
+            <label for="last-name">Last Name <span class="required-symbol">*</span></label>
+            <input type="text" id="last-name" name="last-name" autocomplete="family-name" />
+            <span class="error" id="last-name-required" data-for="last-name">This field is required</span>
           </div>
         </div>
 
         <div class="input-wrapper">
-          <label for="email"
-            >Email Address
-            <div class="required-symbol">*</div></label
-          >
+          <label for="email">Email Address <span class="required-symbol">*</span></label>
           <input type="email" id="email" name="email" autocomplete="off" />
-          <span class="error" id="email-invalid" data-for="email"
-            >Please enter a valid email address</span
-          >
-          <span class="error" id="email-required" data-for="email"
-            >This field is required</span
-          >
+          <span class="error" id="email-invalid" data-for="email">Please enter a valid email address</span>
+          <span class="error" id="email-required" data-for="email">This field is required</span>
         </div>
 
         <fieldset>
           <legend>
             Query Type
-            <div class="required-symbol">*</div>
+            <span class="required-symbol">*</span>
           </legend>
           <div class="radios">
             <label for="general-enquiry" class="radios__item"
-              ><input
-                id="general-enquiry"
-                name="query-type"
-                type="radio"
-                value="general-enquiry"
-              />
+              ><input id="general-enquiry" name="query-type" type="radio" value="general-enquiry" />
               General Enquiry
             </label>
 
             <label for="support-query" class="radios__item"
-              ><input
-                id="support-query"
-                name="query-type"
-                type="radio"
-                value="support-query"
-              />
+              ><input id="support-query" name="query-type" type="radio" value="support-query" />
               Support Request
             </label>
           </div>
-          <span class="error" id="query-type-required" data-for="query-type"
-            >This field is required</span
-          >
+          <span class="error" id="query-type-required" data-for="query-type">This field is required</span>
         </fieldset>
 
         <div class="input-wrapper">
-          <label for="message"
-            >Message
-            <div class="required-symbol">*</div></label
-          >
+          <label for="message">Message <span class="required-symbol">*</span></label>
           <textarea id="message" name="message"></textarea>
-          <span class="error" id="message-required" data-for="message"
-            >This field is required</span
-          >
+          <span class="error" id="message-required" data-for="message">This field is required</span>
         </div>
 
         <div class="input-wrapper">
           <label for="consent">
             <input type="checkbox" id="consent" name="consent" />
             I consent to being contacted by the team
-            <div class="required-symbol">*</div>
+            <span class="required-symbol">*</span>
           </label>
-          <span class="error" id="consent-required" data-for="consent"
-            >To submit this form, please consent to being contacted</span
-          >
+          <span class="error" id="consent-required" data-for="consent">To submit this form, please consent to being contacted</span>
         </div>
 
         <button type="submit">Submit</button>
       </form>
 
       <div class="toast" aria-live="assertive">
-        <h2>
-          <img src="./assets/images/icon-success-check.svg" alt="" /> Message
-          Sent!
-        </h2>
+        <h2><img src="./assets/images/icon-success-check.svg" alt="" /> Message Sent!</h2>
         <p>Thanks for completing the form. We'll be in touch soon!</p>
       </div>
     </main>
