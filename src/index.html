@@ -19,8 +19,8 @@
   </head>
   <body>
     <main>
-      <form>
-        <h1>Contact Us</h1>
+      <form aria-labelledby="heading">
+        <h1 id="heading">Contact Us</h1>
         <div class="name-wrapper">
           <div class="input-wrapper">
             <label for="first-name"
@@ -60,7 +60,7 @@
             <div class="required-symbol">*</div></label
           >
           <input type="email" id="email" name="email" autocomplete="off" />
-          <span class="error" id="email-validation" data-for="email"
+          <span class="error" id="email-invalid" data-for="email"
             >Please enter a valid email address</span
           >
           <span class="error" id="email-required" data-for="email"
@@ -69,7 +69,7 @@
         </div>
 
         <fieldset>
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <legend>
             Query Type
             <div class="required-symbol">*</div>
           </legend>
