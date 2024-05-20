@@ -1,5 +1,5 @@
-const form = document.querySelector("form");
-const toast = document.querySelector(".toast");
+const form = document.querySelector("form")!;
+const toast = document.querySelector(".toast")!;
 
 form.onsubmit = (event) => {
   event.preventDefault();
