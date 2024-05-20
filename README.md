@@ -49,7 +49,7 @@ Users should be able to:
 <details>
  <summary>Submit demo</summary>
 
-![Recording of successful submission](./readme-screenshots/submit.png)
+![Recording of successful submission](./readme-screenshots/submit.gif)
 
 </details>
 
