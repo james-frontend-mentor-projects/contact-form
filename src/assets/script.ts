@@ -67,10 +67,16 @@ form.onsubmit = async (event) => {
       // Handle bad request case
       const badFields = (await res.json()).badFields;
       const badFieldsSet = new Set(badFields);
-      console.log(badFieldsSet);
       badFieldsSet.forEach((field) => {
         form.querySelector(`[id="${field}"] + .error, [id="${field}"].error`).classList.add("show");
       });
+      if (badFieldsSet.size > 0) {
+        console.log(badFieldsSet);
+        const firstBadValue = badFieldsSet.values().next().value;
+        (form
+          .querySelector(`[id="${firstBadValue}"] + .error, [id="${firstBadValue}"].error`)
+          .parentElement?.querySelector("input, textarea") as HTMLInputElement)!.focus();
+      }
       break;
     case 422:
       // Handle unprocessable entity case

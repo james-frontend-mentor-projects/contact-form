@@ -19,19 +19,19 @@
         <div class="name-wrapper">
           <div class="input-wrapper">
             <label for="first-name">First Name <span class="required-symbol">*</span></label>
-            <input type="text" id="first-name" name="first-name" autocomplete="given-name" />
+            <input type="text" id="first-name" name="first-name" autocomplete="given-name" aria-required="true" />
             <span class="error" id="first-name-required" data-for="first-name">This field is required</span>
           </div>
           <div class="input-wrapper">
             <label for="last-name">Last Name <span class="required-symbol">*</span></label>
-            <input type="text" id="last-name" name="last-name" autocomplete="family-name" />
+            <input type="text" id="last-name" name="last-name" autocomplete="family-name" aria-required="true" />
             <span class="error" id="last-name-required" data-for="last-name">This field is required</span>
           </div>
         </div>
 
         <div class="input-wrapper">
           <label for="email">Email Address <span class="required-symbol">*</span></label>
-          <input type="email" id="email" name="email" autocomplete="off" />
+          <input type="email" id="email" name="email" autocomplete="email" aria-required="true" />
           <span class="error" id="email-invalid" data-for="email">Please enter a valid email address</span>
           <span class="error" id="email-required" data-for="email">This field is required</span>
         </div>
@@ -43,12 +43,12 @@
           </legend>
           <div class="radios">
             <label for="general-enquiry" class="radios__item"
-              ><input id="general-enquiry" name="query-type" type="radio" value="general-enquiry" />
+              ><input id="general-enquiry" name="query-type" type="radio" value="general-enquiry" aria-required="true" />
               General Enquiry
             </label>
 
             <label for="support-query" class="radios__item"
-              ><input id="support-query" name="query-type" type="radio" value="support-query" />
+              ><input id="support-query" name="query-type" type="radio" value="support-query" aria-required="true" />
               Support Request
             </label>
           </div>
@@ -57,13 +57,13 @@
 
         <div class="input-wrapper">
           <label for="message">Message <span class="required-symbol">*</span></label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" aria-required="true"></textarea>
           <span class="error" id="message-required" data-for="message">This field is required</span>
         </div>
 
         <div class="input-wrapper">
           <label for="consent">
-            <input type="checkbox" id="consent" name="consent" />
+            <input type="checkbox" id="consent" name="consent" aria-required="true" />
             I consent to being contacted by the team
             <span class="required-symbol">*</span>
           </label>

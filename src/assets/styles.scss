@@ -33,6 +33,7 @@ $min-width-desktop: 40rem;
 // HTML tags
 body {
   background-color: $light-green;
+  min-height: 100vh;
 }
 main {
   display: flex;
@@ -164,6 +165,7 @@ legend {
   position: fixed;
   top: 1rem;
   padding: 1rem;
+  margin: 0 1rem;
   background-color: $dark-grey;
   color: $white;
   border-radius: 8px;
